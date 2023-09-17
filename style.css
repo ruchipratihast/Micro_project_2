@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+.navbar {
+    min-height: 10vh;
+    background-color: #6f6af7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: fit-content;
+    padding: 0 2rem;
+    z-index: 10;
+}
+
+.navbar h2 {
+    font-family: Delius Unicase;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffff;
+
+}
+
+.navbar .menu ul{
+    display: flex;
+}
+
+.navbar .menu ul li{
+    list-style: none;
+    margin-left: 62px;
+}
+
+.navbar .menu ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 24px;
+}
+ 
+.search{
+    width:200px ;
+    height: 18px;
+    background-color: #ffff;
+    padding: 12px 0px 14px 14px;
+    border-radius: 20px;
+}
+
+.srch{
+    border: none;
+}
+
+.search a{
+    color: grey;
+}
+
+main {
+    position: relative;
+    display: flex;
+    padding-top: 6rem;
+}
+
+.non-sticky {
+    width: 92%;
+}
+
+.main-content {
+    margin-left: auto;
+    margin-top: 5rem;
+    display: flex;
+} 
+
+.main-content img {
+    width: 30%;
+    margin-left: 5rem;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.main-content textarea {
+    width: 70%;
+    margin-top: 1.2rem;
+    margin-bottom: 2.2rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #e5d8ff;
+    color: #6f7373;
+    font-size: 1.2rem;
+    box-shadow: inset 3px 5px 27px 0 rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+    padding: 32px; 
+}
+
+.sticky-comp {
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    position: sticky;
+    top: 20vh;
+    margin-top: 25vh;
+    align-items: flex-end;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.sticky-comp .whatsapp {
+    Width: 88px;
+    Height: 75px;
+    Left: 7px;
+    border: 3px solid black ;
+    border-radius: 11px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    margin-left: 6rem;
+    margin-bottom: 6rem;
+    margin-right: 0rem;
+    margin-top: 3rem;
+}
+
+.cards div {
+    min-height: 14vh;
+    width: 100%;
+    margin-top: 3rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    color: white;
+    box-shadow: 0 9px 31px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cards div:first-child {
+    background-color: #929dff;
+}
+
+.cards div:nth-child(2) {
+    background-color: #734CF2;
+}
+
+.cards div:nth-child(3) {
+    background-color: #D288FF;
+}
+
+.cards div:nth-child(4) {
+    background-color: #000000;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.info-card {
+    display: flex;
+    margin-left: 4rem;
+    margin-right: -1.5rem;
+    border-radius: 15px;
+    background-color: #483eff;
+    padding: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+    min-height: 70vh;
+}
+
+.left div {
+    padding: 2.2rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.left div:first-child {
+    background-color: #bce0f6;
+    box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.39);
+}
+
+.left div:nth-child(2) {
+    color: white;
+    border: 5px solid white;
+}
+
+.left div:nth-child(3) {
+    color: white;
+    border: 5px solid white;
+}
+
+.right {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    min-height: 63vh;
+} 
+
+.right h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.personal-info {
+    display: flex;
+    margin-left: 1rem;
+    line-height: 2.5rem;
+    gap: 1rem;
+    /* font-size: 1.5rem;
+    font-weight: bold; */
+}
+
+h3  {
+    font-size: 1.5rem;
+}
+
+
+.personal-info div:first-child {
+    min-width: 50px;
+}
+
+.next-button {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-top: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.help {
+    position: fixed;
+    bottom: 0;
+    right: 5vw;
+    background-color: #ffff;
+    padding: 18px;
+    border-radius: 100%;
+}
+
+.help img {
+    width: 100px;
+    height: auto;
+    content-visibility: auto;
+    cursor: pointer;
+} 
+
+/* Responsive Design */
+@media screen and (max-width:1200px){
+
+    .navbar .menu ul{
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-evenly;
+    }  
+}
